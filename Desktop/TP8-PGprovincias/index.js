@@ -1,11 +1,10 @@
-// Punto de entrada de la aplicación.
-// Levanta el servidor Express y registra todos los middlewares y routers.
-import express       from 'express';
-import cors          from 'cors';
+
+import express from 'express';
+import cors from 'cors';
 import ProvinceRouter from './src/controllers/province-controller.js';
 
 const app  = express();
-const port = 3000; // El servidor escucha en http://localhost:3000
+const port = 3000; //http://localhost:3000
 
 // ─── Middlewares ──────────────────────────────────────────────────────────────
 app.use(cors());          // Habilita CORS para permitir peticiones desde otros orígenes
