@@ -6,15 +6,14 @@ import ProvinceRouter from './src/controllers/province-controller.js';
 const app  = express();
 const port = 3000; //http://localhost:3000
 
-// ─── Middlewares ──────────────────────────────────────────────────────────────
-app.use(cors());          // Habilita CORS para permitir peticiones desde otros orígenes
-app.use(express.json());  // Permite parsear el body de las peticiones como JSON
+app.use(cors());          
+app.use(express.json());  
 
-// ─── Endpoints (Routers) ──────────────────────────────────────────────────────
+// Endpoints 
 // Todas las rutas de Province quedan bajo /api/province
 app.use('/api/province', ProvinceRouter);
 
-// ─── Inicio del servidor ──────────────────────────────────────────────────────
+
 app.listen(port, () => {
-    console.log(`Example app listening on port ${port}`);
+    console.log(`pagina escuchando en el puerto ${port}`);
 });
