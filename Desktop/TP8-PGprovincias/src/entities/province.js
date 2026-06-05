@@ -1,4 +1,4 @@
-// Entidad Province: representa una fila de la tabla "provinces" en la base de datos.
+
 // Se usa para transportar datos entre las capas (repository → service → controller).
 class Province {
     constructor(id, name, full_name, latitude, longitude, display_order) {
@@ -12,3 +12,4 @@ class Province {
 }
 
 export default Province;
+//(clase Province con los campos que tiene la tabla en la BD)

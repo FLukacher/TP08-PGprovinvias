@@ -1,8 +1,7 @@
-// Cargamos las variables de entorno del archivo .env
+
 import 'dotenv/config';
 
-// Objeto de configuración que usa el Client de pg para conectarse a PostgreSQL.
-// Los valores vienen del archivo .env para no hardcodear credenciales en el código.
+// objeto de configuración que usa el Client de pg para conectarse a PostgreSQL. (valores vienen del archivo .env)
 const DBConfig = {
     host:     process.env.DB_HOST,
     port:     process.env.DB_PORT,
