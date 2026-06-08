@@ -1,89 +1,75 @@
-// Controller: capa de presentación / endpoints HTTP.
-// Recibe las peticiones HTTP, llama al Service y devuelve la respuesta al cliente.
-// NO contiene lógica de negocio ni acceso a datos.
+//Controller: capa de presentación / endpoints HTTP.
 import { Router }       from 'express';
 import { StatusCodes }  from 'http-status-codes';
 import ProvinceService  from '../services/province-service.js';
 
-// Creamos el Router de Express para agrupar todos los endpoints de Province
+//creamos el Router para agrupar todos los endpoints
 const ProvinceRouter = Router();
 
-// ─────────────────────────────────────────────────────────────────────────────
-// GET /api/province
-// Retorna todas las provincias.
-// ─────────────────────────────────────────────────────────────────────────────
+
+// GET /api/province (retorna todas las provincias)
+
 ProvinceRouter.get('/', async (req, res) => {
     const provinces = await ProvinceService.getAllAsync();
     // Siempre retorna 200 con el array (puede estar vacío)
     res.status(StatusCodes.OK).json(provinces);
 });
 
-// ─────────────────────────────────────────────────────────────────────────────
-// GET /api/province/:id
-// Retorna una provincia por ID.
-// 200 si la encontró, 404 si no existe.
-// ─────────────────────────────────────────────────────────────────────────────
+// GET /api/province/:id (retorna una provincia por ID)
+
 ProvinceRouter.get('/:id', async (req, res) => {
-    // Obtenemos el id de los parámetros de la URL y lo convertimos a número
-    const id = parseInt(req.params.id);
+    
+    const id = parseInt(req.params.id); // obtenemos el id de los parámetros de la URL y lo parseamos
     const province = await ProvinceService.getByIdAsync(id);
 
     if (!province) {
-        // No se encontró ninguna provincia con ese id
         return res.status(StatusCodes.NOT_FOUND).json({ message: `No se encontró la provincia con id ${id}.` });
     }
 
     res.status(StatusCodes.OK).json(province);
+    // 200 si la encontró, 404 si no existe
 });
 
-// ─────────────────────────────────────────────────────────────────────────────
-// POST /api/province
-// Inserta una nueva provincia.
-// 201 si se creó correctamente, 400 si hay error de validación.
-// ─────────────────────────────────────────────────────────────────────────────
+
+// POST /api/province (inserta una nueva provincia)
+
 ProvinceRouter.post('/', async (req, res) => {
-    // Los datos de la nueva provincia vienen en el body del request
     const province = req.body;
     const { error, data } = await ProvinceService.insertAsync(province);
 
     if (error) {
-        // Error de validación de reglas de negocio → 400 Bad Request
         return res.status(StatusCodes.BAD_REQUEST).json({ message: error });
     }
-
-    // Provincia creada exitosamente → 201 Created
+    //201 si se creó correctamente, 400 si hay error de validación.
     res.status(StatusCodes.CREATED).json(data);
 });
 
-// ─────────────────────────────────────────────────────────────────────────────
-// PUT /api/province
-// Actualiza una provincia existente.
-// 201 si se actualizó, 400 si hay error de validación, 404 si no existe.
-// ─────────────────────────────────────────────────────────────────────────────
+
+// PUT /api/province (actualiza una provincia existente)
+
+// 
+
 ProvinceRouter.put('/', async (req, res) => {
     // Los datos actualizados vienen en el body (incluyendo el id)
     const province = req.body;
     const { error, data } = await ProvinceService.updateAsync(province);
 
     if (error) {
-        // Error de validación → 400 Bad Request
+        //error de validación 
         return res.status(StatusCodes.BAD_REQUEST).json({ message: error });
     }
 
     if (!data) {
-        // El repository retornó null → no existe una provincia con ese id
+        //no existe una provincia con ese id
         return res.status(StatusCodes.NOT_FOUND).json({ message: `No se encontró la provincia con id ${province.id}.` });
     }
 
-    // Actualización exitosa → 201 Created (según lo indica el TP)
+    // 201 si se actualizó, 400 si hay error de validación, 404 si no existe.
     res.status(StatusCodes.CREATED).json(data);
 });
 
-// ─────────────────────────────────────────────────────────────────────────────
-// DELETE /api/province/:id
-// Elimina una provincia por ID.
-// 200 si se eliminó, 404 si no existe.
-// ─────────────────────────────────────────────────────────────────────────────
+// DELETE /api/province/:id (elimina una provincia por ID)
+
 ProvinceRouter.delete('/:id', async (req, res) => {
     const id = parseInt(req.params.id);
     const deleted = await ProvinceService.deleteAsync(id);
@@ -93,7 +79,6 @@ ProvinceRouter.delete('/:id', async (req, res) => {
         return res.status(StatusCodes.NOT_FOUND).json({ message: `No se encontró la provincia con id ${id}.` });
     }
 
-    // Eliminación exitosa → 200 OK con la provincia eliminada
     res.status(StatusCodes.OK).json(deleted);
 });
 

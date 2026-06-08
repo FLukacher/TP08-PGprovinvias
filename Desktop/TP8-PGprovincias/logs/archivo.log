@@ -82,3 +82,87 @@ Stack Trace: error: la autentificaci�n password fall� para el usuario �pos
     at Readable.push (node:internal/streams/readable:390:5)
     at TCP.onStreamRead (node:internal/stream_base_commons:189:23)
 
+2026-06-08T14:33:19.175Z: la autentificaci�n password fall� para el usuario �postgres�
+Stack Trace: error: la autentificaci�n password fall� para el usuario �postgres�
+    at parseErrorMessage (C:\Users\devandroid\TP08-PGprovinvias\Desktop\TP8-PGprovincias\node_modules\pg-protocol\dist\parser.js:305:11)
+    at Parser.handlePacket (C:\Users\devandroid\TP08-PGprovinvias\Desktop\TP8-PGprovincias\node_modules\pg-protocol\dist\parser.js:143:27)
+    at Parser.parse (C:\Users\devandroid\TP08-PGprovinvias\Desktop\TP8-PGprovincias\node_modules\pg-protocol\dist\parser.js:37:38)
+    at Socket.<anonymous> (C:\Users\devandroid\TP08-PGprovinvias\Desktop\TP8-PGprovincias\node_modules\pg-protocol\dist\index.js:11:42)
+    at Socket.emit (node:events:508:28)
+    at addChunk (node:internal/streams/readable:559:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+    at Readable.push (node:internal/streams/readable:390:5)
+    at TCP.onStreamRead (node:internal/stream_base_commons:189:23)
+
+2026-06-08T14:33:38.598Z: la autentificaci�n password fall� para el usuario �postgres�
+Stack Trace: error: la autentificaci�n password fall� para el usuario �postgres�
+    at parseErrorMessage (C:\Users\devandroid\TP08-PGprovinvias\Desktop\TP8-PGprovincias\node_modules\pg-protocol\dist\parser.js:305:11)
+    at Parser.handlePacket (C:\Users\devandroid\TP08-PGprovinvias\Desktop\TP8-PGprovincias\node_modules\pg-protocol\dist\parser.js:143:27)
+    at Parser.parse (C:\Users\devandroid\TP08-PGprovinvias\Desktop\TP8-PGprovincias\node_modules\pg-protocol\dist\parser.js:37:38)
+    at Socket.<anonymous> (C:\Users\devandroid\TP08-PGprovinvias\Desktop\TP8-PGprovincias\node_modules\pg-protocol\dist\index.js:11:42)
+    at Socket.emit (node:events:508:28)
+    at addChunk (node:internal/streams/readable:559:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+    at Readable.push (node:internal/streams/readable:390:5)
+    at TCP.onStreamRead (node:internal/stream_base_commons:189:23)
+
+2026-06-08T14:35:11.622Z: la autentificaci�n password fall� para el usuario �postgres�
+Stack Trace: error: la autentificaci�n password fall� para el usuario �postgres�
+    at parseErrorMessage (C:\Users\devandroid\TP08-PGprovinvias\Desktop\TP8-PGprovincias\node_modules\pg-protocol\dist\parser.js:305:11)
+    at Parser.handlePacket (C:\Users\devandroid\TP08-PGprovinvias\Desktop\TP8-PGprovincias\node_modules\pg-protocol\dist\parser.js:143:27)
+    at Parser.parse (C:\Users\devandroid\TP08-PGprovinvias\Desktop\TP8-PGprovincias\node_modules\pg-protocol\dist\parser.js:37:38)
+    at Socket.<anonymous> (C:\Users\devandroid\TP08-PGprovinvias\Desktop\TP8-PGprovincias\node_modules\pg-protocol\dist\index.js:11:42)
+    at Socket.emit (node:events:508:28)
+    at addChunk (node:internal/streams/readable:559:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+    at Readable.push (node:internal/streams/readable:390:5)
+    at TCP.onStreamRead (node:internal/stream_base_commons:189:23)
+
+2026-06-08T14:39:12.589Z: no existe la base de datos �TP7 Final�
+Stack Trace: error: no existe la base de datos �TP7 Final�
+    at parseErrorMessage (C:\Users\devandroid\TP08-PGprovinvias\Desktop\TP8-PGprovincias\node_modules\pg-protocol\dist\parser.js:305:11)
+    at Parser.handlePacket (C:\Users\devandroid\TP08-PGprovinvias\Desktop\TP8-PGprovincias\node_modules\pg-protocol\dist\parser.js:143:27)
+    at Parser.parse (C:\Users\devandroid\TP08-PGprovinvias\Desktop\TP8-PGprovincias\node_modules\pg-protocol\dist\parser.js:37:38)
+    at Socket.<anonymous> (C:\Users\devandroid\TP08-PGprovinvias\Desktop\TP8-PGprovincias\node_modules\pg-protocol\dist\index.js:11:42)
+    at Socket.emit (node:events:508:28)
+    at addChunk (node:internal/streams/readable:559:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+    at Readable.push (node:internal/streams/readable:390:5)
+    at TCP.onStreamRead (node:internal/stream_base_commons:189:23)
+
+2026-06-08T14:40:52.933Z: no existe la base de datos �TP7 Final�
+Stack Trace: error: no existe la base de datos �TP7 Final�
+    at parseErrorMessage (C:\Users\devandroid\TP08-PGprovinvias\Desktop\TP8-PGprovincias\node_modules\pg-protocol\dist\parser.js:305:11)
+    at Parser.handlePacket (C:\Users\devandroid\TP08-PGprovinvias\Desktop\TP8-PGprovincias\node_modules\pg-protocol\dist\parser.js:143:27)
+    at Parser.parse (C:\Users\devandroid\TP08-PGprovinvias\Desktop\TP8-PGprovincias\node_modules\pg-protocol\dist\parser.js:37:38)
+    at Socket.<anonymous> (C:\Users\devandroid\TP08-PGprovinvias\Desktop\TP8-PGprovincias\node_modules\pg-protocol\dist\index.js:11:42)
+    at Socket.emit (node:events:508:28)
+    at addChunk (node:internal/streams/readable:559:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+    at Readable.push (node:internal/streams/readable:390:5)
+    at TCP.onStreamRead (node:internal/stream_base_commons:189:23)
+
+2026-06-08T14:42:40.159Z: no existe la base de datos �TP7 Final�
+Stack Trace: error: no existe la base de datos �TP7 Final�
+    at parseErrorMessage (C:\Users\devandroid\TP08-PGprovinvias\Desktop\TP8-PGprovincias\node_modules\pg-protocol\dist\parser.js:305:11)
+    at Parser.handlePacket (C:\Users\devandroid\TP08-PGprovinvias\Desktop\TP8-PGprovincias\node_modules\pg-protocol\dist\parser.js:143:27)
+    at Parser.parse (C:\Users\devandroid\TP08-PGprovinvias\Desktop\TP8-PGprovincias\node_modules\pg-protocol\dist\parser.js:37:38)
+    at Socket.<anonymous> (C:\Users\devandroid\TP08-PGprovinvias\Desktop\TP8-PGprovincias\node_modules\pg-protocol\dist\index.js:11:42)
+    at Socket.emit (node:events:508:28)
+    at addChunk (node:internal/streams/readable:559:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+    at Readable.push (node:internal/streams/readable:390:5)
+    at TCP.onStreamRead (node:internal/stream_base_commons:189:23)
+
+2026-06-08T14:42:42.600Z: no existe la base de datos �TP7 Final�
+Stack Trace: error: no existe la base de datos �TP7 Final�
+    at parseErrorMessage (C:\Users\devandroid\TP08-PGprovinvias\Desktop\TP8-PGprovincias\node_modules\pg-protocol\dist\parser.js:305:11)
+    at Parser.handlePacket (C:\Users\devandroid\TP08-PGprovinvias\Desktop\TP8-PGprovincias\node_modules\pg-protocol\dist\parser.js:143:27)
+    at Parser.parse (C:\Users\devandroid\TP08-PGprovinvias\Desktop\TP8-PGprovincias\node_modules\pg-protocol\dist\parser.js:37:38)
+    at Socket.<anonymous> (C:\Users\devandroid\TP08-PGprovinvias\Desktop\TP8-PGprovincias\node_modules\pg-protocol\dist\index.js:11:42)
+    at Socket.emit (node:events:508:28)
+    at addChunk (node:internal/streams/readable:559:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+    at Readable.push (node:internal/streams/readable:390:5)
+    at TCP.onStreamRead (node:internal/stream_base_commons:189:23)
+

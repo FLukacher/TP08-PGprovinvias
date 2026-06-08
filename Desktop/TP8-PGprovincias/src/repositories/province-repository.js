@@ -19,7 +19,8 @@ class ProvinceRepository {
             returnList = result.rows;
 
         } catch (error) {
-            LogHelper.logError(error);
+                console.error('ERROR EN GETALL:', error.message);
+                LogHelper.logError(error);
 
         } finally { // haya error o no
            

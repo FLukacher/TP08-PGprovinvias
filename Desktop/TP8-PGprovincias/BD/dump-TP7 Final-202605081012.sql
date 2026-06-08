@@ -23,12 +23,6 @@ SET row_security = off;
 -- Name: TP7 Final; Type: DATABASE; Schema: -; Owner: postgres
 --
 
-CREATE DATABASE "TP7 Final" WITH TEMPLATE = template0 ENCODING = 'UTF8' LOCALE_PROVIDER = libc LOCALE = 'Spanish_Argentina.1252';
-
-
-ALTER DATABASE "TP7 Final" OWNER TO postgres;
-
-\connect -reuse-previous=on "dbname='TP7 Final'"
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
