@@ -182,3 +182,35 @@ Stack Trace: error: el valor nulo en la columna «activo» de la relación «pro
     at async ProvinceService.insertAsync (file:///C:/Users/devandroid/TP08-PGprovinvias/Desktop/TP8-PGprovincias/src/services/province-service.js:24:24)
     at async file:///C:/Users/devandroid/TP08-PGprovinvias/Desktop/TP8-PGprovincias/src/controllers/province-controller.js:38:29
 
+2026-06-12T13:16:34.926Z: no existe la relación «provinces»
+Stack Trace: error: no existe la relación «provinces»
+    at C:\Users\devandroid\TP08-PGprovinvias\Desktop\TP8-PGprovincias\node_modules\pg\lib\client.js:646:17
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async ProvinceRepository.getAllAsync (file:///C:/Users/devandroid/TP08-PGprovinvias/Desktop/TP8-PGprovincias/src/repositories/province-repository.js:18:28)
+    at async ProvinceService.getAllAsync (file:///C:/Users/devandroid/TP08-PGprovinvias/Desktop/TP8-PGprovincias/src/services/province-service.js:9:16)
+    at async file:///C:/Users/devandroid/TP08-PGprovinvias/Desktop/TP8-PGprovincias/src/controllers/province-controller.js:13:23
+
+2026-06-12T13:17:09.296Z: no existe la relación «provinces»
+Stack Trace: error: no existe la relación «provinces»
+    at C:\Users\devandroid\TP08-PGprovinvias\Desktop\TP8-PGprovincias\node_modules\pg\lib\client.js:646:17
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async ProvinceRepository.getAllAsync (file:///C:/Users/devandroid/TP08-PGprovinvias/Desktop/TP8-PGprovincias/src/repositories/province-repository.js:18:28)
+    at async ProvinceService.getAllAsync (file:///C:/Users/devandroid/TP08-PGprovinvias/Desktop/TP8-PGprovincias/src/services/province-service.js:9:16)
+    at async file:///C:/Users/devandroid/TP08-PGprovinvias/Desktop/TP8-PGprovincias/src/controllers/province-controller.js:13:23
+
+2026-06-12T13:26:34.097Z: no existe la relación «provinces»
+Stack Trace: error: no existe la relación «provinces»
+    at C:\Users\devandroid\TP08-PGprovinvias\Desktop\TP8-PGprovincias\node_modules\pg\lib\client.js:646:17
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async ProvinceRepository.getAllAsync (file:///C:/Users/devandroid/TP08-PGprovinvias/Desktop/TP8-PGprovincias/src/repositories/province-repository.js:18:28)
+    at async ProvinceService.getAllAsync (file:///C:/Users/devandroid/TP08-PGprovinvias/Desktop/TP8-PGprovincias/src/services/province-service.js:9:16)
+    at async file:///C:/Users/devandroid/TP08-PGprovinvias/Desktop/TP8-PGprovincias/src/controllers/province-controller.js:13:23
+
+2026-06-12T13:26:56.370Z: no existe la columna «display_order»
+Stack Trace: error: no existe la columna «display_order»
+    at C:\Users\devandroid\TP08-PGprovinvias\Desktop\TP8-PGprovincias\node_modules\pg\lib\client.js:646:17
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async ProvinceRepository.getAllAsync (file:///C:/Users/devandroid/TP08-PGprovinvias/Desktop/TP8-PGprovincias/src/repositories/province-repository.js:18:28)
+    at async ProvinceService.getAllAsync (file:///C:/Users/devandroid/TP08-PGprovinvias/Desktop/TP8-PGprovincias/src/services/province-service.js:9:16)
+    at async file:///C:/Users/devandroid/TP08-PGprovinvias/Desktop/TP8-PGprovincias/src/controllers/province-controller.js:13:23
+

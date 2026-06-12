@@ -14,7 +14,19 @@ class ProvinceRepository {
         try {
           
             await client.connect(); //nos conectamos a la BD
-            const sql = `SELECT * FROM provinces ORDER BY display_order`;
+            // La tabla `provincias` tiene columnas: nombre, orden, activo, id.
+            // Seleccionamos y mapeamos a los nombres esperados por la aplicación.
+            const sql = `
+                SELECT
+                    id,
+                    nombre AS name,
+                    nombre AS full_name,
+                    NULL::numeric AS latitude,
+                    NULL::numeric AS longitude,
+                    orden AS display_order
+                FROM public.provincias
+                ORDER BY orden
+            `;
             const result = await client.query(sql); //ejecutamos la query
             returnList = result.rows;
 
@@ -38,7 +50,7 @@ class ProvinceRepository {
 
         try {
             await client.connect();
-            const sql    = `SELECT * FROM provinces WHERE id = $1`;
+            const sql    = `SELECT * FROM provincias WHERE id = $1`;
 
             const values = [id]; // array de valores que reemplazan los parámetros $1, $2, etc. en orden
 
@@ -70,7 +82,7 @@ class ProvinceRepository {
 
             // insert con 5 parámetros ($1 a $5)
             const sql = `
-                INSERT INTO provinces (name, full_name, latitude, longitude, display_order)
+                INSERT INTO provincias (name, full_name, latitude, longitude, display_order)
                 VALUES ($1, $2, $3, $4, $5)
                 RETURNING * 
             `;
@@ -111,7 +123,7 @@ class ProvinceRepository {
 
             // UPDATE con 6 parámetros ($1 a $6)            
             const sql = `
-                UPDATE provinces
+                UPDATE provincias
                 SET name          = $1,
                     full_name     = $2,
                     latitude      = $3,
@@ -157,7 +169,7 @@ class ProvinceRepository {
             await client.connect();
 
             // RETURNING * nos devuelve la fila eliminada para confirmar que existía
-            const sql    = `DELETE FROM provinces WHERE id = $1 RETURNING *`;
+            const sql    = `DELETE FROM provincias WHERE id = $1 RETURNING *`;
 
 
             const values = [id]; //array con el id de la provincia a eliminar
