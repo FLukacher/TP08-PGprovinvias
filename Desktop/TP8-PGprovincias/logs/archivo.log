@@ -214,3 +214,15 @@ Stack Trace: error: no existe la columna «display_order»
     at async ProvinceService.getAllAsync (file:///C:/Users/devandroid/TP08-PGprovinvias/Desktop/TP8-PGprovincias/src/services/province-service.js:9:16)
     at async file:///C:/Users/devandroid/TP08-PGprovinvias/Desktop/TP8-PGprovincias/src/controllers/province-controller.js:13:23
 
+2026-06-16T11:16:31.730Z: no existe la base de datos �TP7 Final�
+Stack Trace: error: no existe la base de datos �TP7 Final�
+    at parseErrorMessage (C:\Users\devandroid\TP08-PGprovinvias\Desktop\TP8-PGprovincias\node_modules\pg-protocol\dist\parser.js:305:11)
+    at Parser.handlePacket (C:\Users\devandroid\TP08-PGprovinvias\Desktop\TP8-PGprovincias\node_modules\pg-protocol\dist\parser.js:143:27)
+    at Parser.parse (C:\Users\devandroid\TP08-PGprovinvias\Desktop\TP8-PGprovincias\node_modules\pg-protocol\dist\parser.js:37:38)
+    at Socket.<anonymous> (C:\Users\devandroid\TP08-PGprovinvias\Desktop\TP8-PGprovincias\node_modules\pg-protocol\dist\index.js:11:42)
+    at Socket.emit (node:events:508:28)
+    at addChunk (node:internal/streams/readable:559:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+    at Readable.push (node:internal/streams/readable:390:5)
+    at TCP.onStreamRead (node:internal/stream_base_commons:189:23)
+
